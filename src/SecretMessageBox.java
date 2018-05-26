@@ -14,7 +14,34 @@ import javax.swing.JOptionPane;
  */
 
 public class SecretMessageBox {
-
+	public static void main(String[] args) {
+	String Password = JOptionPane.showInputDialog(null, "Type A Password");
+	String PassCode = JOptionPane.showInputDialog(null, "Whats The Passcode?  If You Forgotted The Password... Type In Forgot Password");
+	if (PassCode.equals("Password")) {
+	JOptionPane.showMessageDialog(null, "Correct");
+	JOptionPane.showMessageDialog(null, "The Secret Message Is...");
+	JOptionPane.showMessageDialog(null,"The Passcode Is Password");
+	}
+	else if (PassCode.equals("Forgot Password")) {
+	JOptionPane.showMessageDialog(null, "Try Again 2 Tries Left");
+	if (PassCode.equals("Password")) {
+		JOptionPane.showMessageDialog(null, "Correct");
+		JOptionPane.showMessageDialog(null, "The Secret Message Is...");
+		JOptionPane.showMessageDialog(null,"The Passcode Is Password");
+		JOptionPane.showMessageDialog(null, "Now The Password Is Pasword ");
+		}
+	}
+	}
+//else if JOptionPane.showMessageDialog(null,  "Try Again 1 Trie Left");
+//if("TEST")
+//else if JOptionPane.showMessageDialog(null, "Too Many Tries, ShuttingDown And Activating Security Mode");
+//JOptionPane.showMessageDialog(null, "Shutting Down");
+//JOptionPane.showMessageDialog(null, ".");
+//JOptionPane.showMessageDialog(null, "..");
+//JOptionPane.showMessageDialog(null, "...");
+//JOptionPane.showMessageDialog(null, "..");
+//JOptionPane.showMessageDialog(null, ".");
+//JOptionPane.showMessageDialog(null, "Off");
 	// 0. Make a main method and put steps 1-5 inside it
 	
 	// 1. Set a password in a String variable
@@ -29,3 +56,4 @@ public class SecretMessageBox {
 	// 5. If the password does not match, pop-up "INTRUDER!!"
 
 }
+
